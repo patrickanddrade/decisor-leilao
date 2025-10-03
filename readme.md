@@ -237,9 +237,9 @@ http://127.0.0.1:5000/
 ```
 # 6️⃣ Teste de exemplo
 Preencha o formulário com valores fictícios para testar:
-
-Endereço: Rua das Palmeiras, 321 – Centro 🏠
 ```txt
+Endereço: Rua das Palmeiras, 321 – Centro 🏠
+
 Valor de mercado (R$): 400000
 
 Valor de leilão (R$): 350000
@@ -315,4 +315,5 @@ Mesmo sendo simples, o projeto fornece **insights valiosos** para quem quer inve
 
 Obrigado por testar o projeto! 😄🏠  
 Esperamos que ele ajude você a tomar **melhores decisões em leilões**. 🎉
+
 
