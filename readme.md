@@ -253,6 +253,8 @@ Aluguel estimado (R$/mês): 2500
 
 **Clique em Simular e veja o resultado aparecer na tela! ✅**
 
+<img width="986" height="373" alt="decisão" src="https://github.com/user-attachments/assets/d79276b6-f5e0-4da3-aaa0-ee640c811ea3" />
+(consulta feita a partir do endereço e valores aplicados no formulario)
 ## 📊 Como interpretar os resultados
 
 Após preencher o formulário e clicar em **Simular**, você verá a análise do imóvel:
@@ -317,6 +319,7 @@ Mesmo sendo simples, o projeto fornece **insights valiosos** para quem quer inve
 
 Obrigado por testar o projeto! 😄🏠  
 Esperamos que ele ajude você a tomar **melhores decisões em leilões**. 🎉
+
 
 
 
