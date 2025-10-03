@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Decisor de Imóveis em Leilão</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏠 Decisor de Imóveis em Leilão</h1>
+    <form method="POST">
+      <label>Endereço do imóvel:</label>
+      <input type="text" name="endereco" required><br>
+
+      <label>Valor de mercado (R$):</label>
+      <input type="number" name="valor_mercado" step="0.01" required><br>
+
+      <label>Valor de leilão (R$):</label>
+      <input type="number" name="valor_leilao" step="0.01" required><br>
+
+      <label>Oferta planejada (R$):</label>
+      <input type="number" name="oferta" step="0.01" required><br>
+
+      <label>Aluguel estimado (R$/mês):</label>
+      <input type="number" name="aluguel" step="0.01"><br>
+
+      <button type="submit">Simular</button>
+    </form>
+
+    {% if resultado %}
+      <div class="resultado">
+        <h2>Resultado da análise:</h2>
+        <p><strong>Recomendação:</strong> {{ resultado.recomendacao }}</p>
+        <p><strong>Máx. oferta aceitável:</strong> R$ {{ "%.2f"|format(resultado.max_oferta_calculada) }}</p>
+        <p><strong>Total de débitos:</strong> R$ {{ "%.2f"|format(resultado.debitos_total) }}</p>
+        <p><strong>Custos extras:</strong> R$ {{ "%.2f"|format(resultado.extras_total) }}</p>
+        {% if resultado.retorno_anual_percent %}
+          <p><strong>Retorno anual via aluguel:</strong> {{ "%.2f"|format(resultado.retorno_anual_percent) }}%</p>
+        {% endif %}
+        <h3>Justificativas:</h3>
+        <ul>
+          {% for j in resultado.justificativas %}
+            <li>{{ j }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
