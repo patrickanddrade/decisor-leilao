@@ -1,3 +1,5 @@
+![IMAGEM ILUSTRATIVA APENAS PARA EXEMPLO (endereços e valores)]<img width="993" height="487" alt="leilao" src="https://github.com/user-attachments/assets/774f0acf-fc1c-4d99-943c-3a6e34f5ba7f" />
+
 # 🏠✨ Decisor de Imóveis em Leilão
 
 ## 🚀 Introdução
@@ -315,5 +317,6 @@ Mesmo sendo simples, o projeto fornece **insights valiosos** para quem quer inve
 
 Obrigado por testar o projeto! 😄🏠  
 Esperamos que ele ajude você a tomar **melhores decisões em leilões**. 🎉
+
 
 
