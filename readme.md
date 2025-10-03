@@ -38,35 +38,6 @@ decisor-leilao/
 │ └─ style.css
 
 
-## 🛠️ Passo a Passo do Projeto
-# 1. **Criar o ambiente virtual** (opcional mas recomendado):
-python -m venv venv
-
-# 2. **Ativar o ambiente virtual**:
-```
-- Windows:
-venv\Scripts\activate
-```
-```
-- Linux/Mac:
-source venv/bin/activate
-```
-
-# 3. **Instalar dependências**:
-```
-pip install -r requirements.txt
-```
-
-# 4. **Rodar a aplicação Flask**:
-```
-python app.py
-```
-
-# 5. **Abrir o navegador** e acessar:
-```
-http://127.0.0.1:5000/
-```
-
 ## 🐍 Código Python – `decisor_leilao.py`
 
 Este arquivo contém a função principal que calcula o rendimento de investimentos ou imóveis em leilão:
@@ -99,10 +70,10 @@ def calcular_rendimento(valor, tempo, tipo):
     return round(valor_final, 2)
 ```
 
-###🔹 Código Flask – app.py
+##🔹 Código Flask – app.py
 
 Responsável por receber os dados do formulário e exibir o resultado:
-```
+```python
 from flask import Flask, render_template, request
 from decisor_leilao import calcular_rendimento
 
@@ -230,7 +201,7 @@ button:hover {
 
 Siga este passo a passo para testar a aplicação localmente:
 
-### 1️⃣ Baixar o projeto
+# 1️⃣ Baixar o projeto
 Você pode baixar o projeto como ZIP pelo GitHub ou clonar o repositório:
 
 # Clonando via Git
@@ -238,7 +209,7 @@ Você pode baixar o projeto como ZIP pelo GitHub ou clonar o repositório:
 git clone https://github.com/patrickanddrade/decisor-leilao.git
 cd decisor-leilao
 ```
-### 2️⃣ Criar e ativar ambiente virtual (opcional, mas recomendado)
+# 2️⃣ Criar e ativar ambiente virtual (opcional, mas recomendado)
 ```python
 # Windows
 python -m venv venv
@@ -249,22 +220,22 @@ venv\Scripts\activate
 python3 -m venv venv
 source venv/bin/activate
 ```
-### 3️⃣ Instalar dependências
+# 3️⃣ Instalar dependências
 Não há requirements.txt. Certifique-se de ter o Flask instalado:
 ```
 pip install flask
 ```
-### 4️⃣ Rodar a aplicação
+# 4️⃣ Rodar a aplicação
 ```python
 python app.py
 ```
-### 5️⃣ Abrir no navegador
+# 5️⃣ Abrir no navegador
 Abra o navegador e acesse:
 
 ```
 http://127.0.0.1:5000/
 ```
-### 6️⃣ Teste de exemplo
+# 6️⃣ Teste de exemplo
 Preencha o formulário com valores fictícios para testar:
 
 Endereço: Rua das Palmeiras, 321 – Centro 🏠
@@ -344,3 +315,4 @@ Mesmo sendo simples, o projeto fornece **insights valiosos** para quem quer inve
 
 Obrigado por testar o projeto! 😄🏠  
 Esperamos que ele ajude você a tomar **melhores decisões em leilões**. 🎉
+
